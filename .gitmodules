@@ -1,0 +1,4 @@
+[submodule "_layouts"]
+	path = _layouts
+	url = ../jekyll_layouts.git
+	branch = main
