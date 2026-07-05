@@ -1,0 +1,17 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+/.vs
+
+*.png
+*.jpg
+*.zip
+*.7z
+
+
+.browser/
+.claude
+.claude/
+.tmp/
