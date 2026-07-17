@@ -279,18 +279,18 @@ Mind the order: it is not "paint red first, then see whether the black shows thr
 This route matters most for complex flower shapes: a white backing on the reverse lets the underdrawing's shape show straight through to the front, so you have a guide line to follow instead of guessing at the edge and repainting when you guess wrong. My red-flowers-on-black piece has dense, intricate lines, which is exactly why I took this path — process photos below:
 
 <figure>
-<img src="pic1-gongbi-silk-dark-background.jpg" alt="TODO: caption pending" style="width:100%;height:auto;border-radius:8px;">
-<figcaption>TODO: caption pending</figcaption>
+<img src="pic3-gongbi-silk-dark-background.webp" alt="White gofun backing applied to the reverse first" width="1636" height="1590" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
+<figcaption>White gofun backing applied to the reverse first.</figcaption>
 </figure>
 
 <figure>
-<img src="pic2-gongbi-silk-dark-background.jpg" alt="TODO: caption pending" style="width:100%;height:auto;border-radius:8px;">
-<figcaption>TODO: caption pending</figcaption>
+<img src="pic2-gongbi-silk-dark-background.webp" alt="The front afterward, with a faint white glow showing through" width="1187" height="1079" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
+<figcaption>The front afterward — a faint white glow shows through.</figcaption>
 </figure>
 
 <figure>
-<img src="pic3-gongbi-silk-dark-background.jpg" alt="TODO: caption pending" style="width:100%;height:auto;border-radius:8px;">
-<figcaption>TODO: caption pending</figcaption>
+<img src="pic1-gongbi-silk-dark-background.webp" alt="Ready to build up pigment on top of this" width="1366" height="1080" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
+<figcaption>Ready to build up pigment on top of this.</figcaption>
 </figure>
 
 > **Risk note**: mounters' discussions point out that back-side pigment layers face water directly during any future **remounting**, when the old backing paper is stripped — a real flaking risk. If this work may be remounted someday, weigh that trade-off before you start.
