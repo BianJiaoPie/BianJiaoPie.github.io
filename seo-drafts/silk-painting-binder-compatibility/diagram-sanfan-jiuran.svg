@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" font-family="'Noto Sans TC', 'PingFang TC', sans-serif">
+  <style>
+    .layer-label { font-size: 13px; fill: #2b2b2b; }
+    .group-label { font-size: 14px; fill: #1a1a1a; font-weight: 600; }
+    .side-note { font-size: 12px; fill: #6b6b6b; }
+    .title { font-size: 17px; fill: #1a1a1a; font-weight: 600; }
+  </style>
+
+  <text x="320" y="28" text-anchor="middle" class="title">三礬九染：疊層順序示意（由下往上）</text>
+  <text x="320" y="48" text-anchor="middle" class="side-note">「三」「九」是傳統說法的虛數，代表「多次」，不是字面 3 跟 9；礬水是每隔好幾輪染色才上一次，不是每染一層就上一次</text>
+
+  <!-- base silk (bottom-most) -->
+  <rect x="120" y="390" width="280" height="34" rx="3" fill="#e9dfc7" stroke="#b8a97a" stroke-width="1.5"/>
+  <text x="260" y="412" text-anchor="middle" class="layer-label">底色（絹本原底）</text>
+
+  <!-- group 1: several thin 染 layers -->
+  <rect x="120" y="349" width="280" height="12" fill="#e8b9b3" stroke="#c17b74" stroke-width="0.8"/>
+  <rect x="120" y="335" width="280" height="12" fill="#e2a6a0" stroke="#c17b74" stroke-width="0.8"/>
+  <rect x="120" y="321" width="280" height="12" fill="#dd9791" stroke="#c17b74" stroke-width="0.8"/>
+  <text x="410" y="342" class="side-note">多輪分染（一次上很薄，反覆好幾次）</text>
+
+  <!-- alum-glue layer 1 (thin, sparse) -->
+  <rect x="120" y="308" width="280" height="9" fill="#bcd8ec" opacity="0.8"/>
+  <text x="410" y="316" class="side-note">← 這裡才上一次膠礬水固色</text>
+
+  <!-- group 2 -->
+  <rect x="120" y="267" width="280" height="12" fill="#dd9791" stroke="#c17b74" stroke-width="0.8"/>
+  <rect x="120" y="253" width="280" height="12" fill="#d98884" stroke="#b05f58" stroke-width="0.8"/>
+  <rect x="120" y="239" width="280" height="12" fill="#d47b76" stroke="#b05f58" stroke-width="0.8"/>
+
+  <!-- alum-glue layer 2 -->
+  <rect x="120" y="226" width="280" height="9" fill="#bcd8ec" opacity="0.8"/>
+
+  <!-- group 3 -->
+  <rect x="120" y="185" width="280" height="12" fill="#d47b76" stroke="#8f453f" stroke-width="0.8"/>
+  <rect x="120" y="171" width="280" height="12" fill="#c46661" stroke="#8f453f" stroke-width="0.8"/>
+  <rect x="120" y="157" width="280" height="12" fill="#b95850" stroke="#8f453f" stroke-width="0.8"/>
+
+  <!-- final protective alum-glue layer -->
+  <rect x="120" y="140" width="280" height="12" fill="#bcd8ec" opacity="0.85" stroke="#8ab0cc" stroke-width="0.8"/>
+  <text x="410" y="149" class="side-note">最後保護層</text>
+
+  <!-- up arrow -->
+  <line x1="60" y1="418" x2="60" y2="150" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="60" y="435" text-anchor="middle" class="side-note">創作順序 ↑</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#888"/>
+    </marker>
+  </defs>
+
+  <text x="320" y="452" text-anchor="middle" class="side-note">粉紅段＝多次薄薄分染疊出的顏色層；藍段＝間隔多輪染色後才上的膠礬水固色層</text>
+</svg>
