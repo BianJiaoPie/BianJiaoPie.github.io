@@ -31,10 +31,17 @@ header_pages:
   - Contact/index.md
 
 defaults:
-    scope:
+  - scope:
       path: ""
     values:
       layout: "base"
+  - scope:
+      path: "Blog"
+    values:
+      layout: "page/blog/blog" # 0721 修正：原本 defaults 是裸 hash（非合法的 list 語法），懷疑從未真正生效，
+                                 # 導致 Blog 文章實際落到 minima 內建 post layout（<article class="post">/<h1 class="post-title">），
+                                 # 不是本站自訂的 page/blog/blog.html——這解釋了為何封面圖／側欄目錄一直沒出現、
+                                 # 也解釋了 0615-proximity.md 從未被抓到的雙 H1（post-title + body 的 # H1 兩個）
 
 exclude:
   - _includes/.git/

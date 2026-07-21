@@ -1,11 +1,10 @@
 ---
+layout: page/blog/blog
 title: "拉近或分開：用親密性原則，讓版面一目了然"
 date: 2026-06-15
 categories: [設計, 排版]
 tags: [親密性, proximity, layout, vanilla, vue, react]
 ---
-
-# 拉近或分開：用親密性原則，讓版面一目了然
 
 > 只要分門別類，易讀程度就能提升！一邊整理資訊，一邊分門別類，再以版面配置呈現。
 
