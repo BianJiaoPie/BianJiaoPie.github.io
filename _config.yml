@@ -21,6 +21,7 @@
 title: BianJiaoPie
 email: BianJiaoPie@gmail.com
 url: https://BianJiaoPie.com # the base hostname & protocol for your site, e.g. http://example.com
+lang: zh-TW # 修正 og:locale／<html lang> 站台級預設誤判為 en_US 的問題（seo-tech-setup 0721 發現）
 
 repository: BianJiaoPie/BianJiaoPie.github.io
 
@@ -40,6 +41,10 @@ exclude:
   - _layouts/.git/
   - _layouts/page/.git/
   - assets/.git/
+  - article-ideas/
+  - brand-assets/
+  - researcher-drafts/
+  - seo-drafts/
   - .claude
 
 # Build settings

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /article-ideas/
+Disallow: /brand-assets/
+Disallow: /researcher-drafts/
+Disallow: /seo-drafts/
+
+Sitemap: https://bianjiaopie.com/sitemap.xml

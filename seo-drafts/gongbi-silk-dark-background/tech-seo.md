@@ -76,8 +76,60 @@ author:
 | 正式發布網址（canonical） | 待文章實際搬進 `Blog/` 才有 | 使用者發布時；或讓 `jekyll-seo-tag` 自動算，不用手動填 |
 | 英文參考翻譯段落三張圖的 `alt`/`figcaption` | 仍是 `TODO: caption pending` | 該段標明「Reference, not published」不影響正式發布，但若之後真的要發英文版才需要補 |
 
-## 完工接力狀態
+## 完工接力狀態（07-17 當時）
 
 - `cover-image-prompt`：**接力中**（下一步 invoke，帶中文正文＋英文參考翻譯路徑）
 - `social-platform-adapt`：**接力中**（下一步 invoke，目標平台讀 `brand-assets/bianjiaopie/seo-strategy.md`「慣用社群平台」表：YouTube／Instagram／Threads 主，Facebook／X 輔）
 - `fung-seo-upload.sh`：**不適用**——bianjiaopie 不進 LatticeCast `fung-seo` 表，發布走站台自己的流程，此步驟略過
+
+---
+
+## 更新稽核（2026-07-21）
+
+**觸發原因**：文章已實際搬進 `Blog/` 並發布；使用者提供一張真實作品照當封面圖，順勢跑一次追蹤稽核，確認 07-17 標的「待補」項目現況、並抓後續才會出現的問題。
+
+| # | 項目 | 結果 | 說明 |
+|:---:|:---|:---:|:---|
+| 1 | 封面圖欄位 | ✅ 確認＋修正一次繞路 | 07-17 這份報告已經正確判斷欄位該叫 `image` 不是 `cover`（見上方「站台技術棧備註」）。今天處理封面圖時，中途一度誤把它改名成 `cover:`（沿用 `cover-image-prompt` skill 內部指稱檔案的說法，跟 jekyll-seo-tag 實際欄位名搞混），後來查證 jekyll-seo-tag 官方文件後改回 `image:`——現在是 `image: /Blog/cover-gongbi-silk-dark-background.jpg`，正確 |
+| 4 | og:locale | 🛑 發現新 bug（非本文獨有） | `_site` 建置輸出顯示 `og:locale` 是 `en_US`，全站沒設 `lang:`，`jekyll-seo-tag` 找不到就退回英文預設。已在 `_config.yml` 加 `lang: zh-TW`，這是全站修正、不只影響這篇 |
+| 2 | H1 duplication 跨文件確認 | ✅ | 本篇 body 沒有 `# H1`、單一 H1 正確；順勢確認另一篇還在草稿的 `silk-painting-binder-compatibility.md` 原本也寫了 body H1，會重演本篇 07 月已修過的雙 H1 bug——已拿掉，並回頭在 `seo-article/SKILL.md` 補一條 bianjiaopie 專屬例外規則，避免未來文章重演 |
+| 9 | Sitemap／robots | 🛑 **新發現、待你決定** | 見下方單獨一節，這不是本篇獨有、是全站架構問題 |
+
+### 🛑 sitemap 重複內容與內部檔案外洩（07-21 新發現，尚待決定）
+
+`sitemap.xml` 把這篇文章的**所有工作目錄檔案**都建成公開頁面並收錄進去，不只正式文章 `/Blog/gongbi-silk-dark-background.html`：
+
+```
+/seo-drafts/gongbi-silk-dark-background/gongbi-silk-dark-background.html   ← 跟正式文章重複內容
+/seo-drafts/gongbi-silk-dark-background/serp.html                          ← 內部 SERP 分析筆記
+/seo-drafts/gongbi-silk-dark-background/cover-prompt.html                  ← 內部封面圖 prompt
+/seo-drafts/gongbi-silk-dark-background/tech-seo.html                      ← 這份技術檢核報告本身
+/seo-drafts/gongbi-silk-dark-background/social/{facebook,instagram,threads,x}.html
+/researcher-drafts/gongbi-silk-dark-background/research.html               ← 內部研究報告
+```
+
+**原因**：`_config.yml` 的 `exclude:` 只排除 `.claude` 跟幾個 `.git` 目錄，沒排除 `seo-drafts/`／`researcher-drafts/`——這是**全站架構層級**問題，SEO 鏈產出的每一篇文章都受影響，不只這篇。
+
+**兩個風險**：重複內容分散排名權重；內部工作檔（研究筆記、SERP 分析、技術檢核報告、社群草稿）被公開索引。
+
+**已修（2026-07-21）**：範圍比原先發現的更大——查了一次全站，`article-ideas/`、`brand-assets/` 兩個資料夾也一樣被建成公開頁面，sitemap 裡總共 16 個內部檔案網址（含品牌策略文件、`draw_2.md` 個人創作筆記）。雙管齊下：
+
+1. **`_config.yml` 的 `exclude:` 加了 4 個資料夾**（`article-ideas/`、`brand-assets/`、`researcher-drafts/`、`seo-drafts/`）——Jekyll 不會再把它們建置進 `_site`，下次 build 後這些網址直接消失、不是頁面。
+2. **新增站台根目錄 `robots.txt`**，明確 `Disallow` 這 4 個路徑——當作防線：萬一之前已經被 Google 爬過、建置排除生效前的空窗期，至少擋住後續爬蟲不再訪問。
+
+**⚠️ 待你手動處理的部分**：`exclude`／`robots.txt` 都是「以後不再曝露」，**不會讓已經被 Google 收錄的舊網址立刻消失**——如果你用 Google Search Console 查到這些網址已經被索引，需要手動用它的「移除工具」個別提交移除，或等 Google 之後重新爬到 404／Disallow 自然汰除（通常需要一段時間）。
+
+### 更新後 Placeholder 清單
+
+| 項目 | 07-17 現況 | 07-21 現況 |
+|---|---|---|
+| 封面圖檔案 | 尚未生成 | ✅ 已有（使用者提供真實作品照，`pic3-silk-painting-binder-compatibility.jpg` 轉存為封面），但仍是 jpg 未轉 webp（本機無轉檔工具） |
+| `publisher.logo`（schema.org） | 未提及 | ⚠️ 站上目前沒有任何 logo 檔案，`publisher.logo` 缺這塊，需要你提供或製作 |
+| 正式發布網址（canonical） | 待補 | ✅ 已自動生效，`jekyll-seo-tag` 算出 `https://bianjiaopie.com/Blog/gongbi-silk-dark-background.html` |
+| sitemap／內部檔案外洩 | 未發現 | 🛑 新發現，待你決定修法（見上） |
+
+### 更新後完工接力狀態
+
+- `cover-image-prompt`：**已完成**（`cover-prompt.html` 已存在於 sitemap，07-17 之後某次已跑過）
+- `social-platform-adapt`：**已完成**（facebook／instagram／threads／x 四平台版本都已存在）
+- 本輪未重新觸發兩者——依規則「已存在就略過、不覆蓋」
