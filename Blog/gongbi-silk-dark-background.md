@@ -16,7 +16,7 @@ author:
   url: https://BianJiaoPie.com/About/
 image: /Blog/cover-gongbi-silk-dark-background.webp
 image_width: 794
-image_height: 1244
+image_height: 850
 ---
 
 我手上有一件絹本，細緻的黑色背景已經畫好，接下來要在上面畫一叢紅花——然後就卡住了。全部描邊太費工；直接上色，怕花的邊界被背景吃掉；想學水彩用留白膠先擋再撕，又怕紅色從半透明的絹底下透出來，整個方法失去意義。
@@ -96,17 +96,17 @@ image_height: 1244
 
 <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
 <figure style="flex:1 1 220px;max-width:280px;margin:0;">
-<img src="pic3-gongbi-silk-dark-background.webp" alt="背面先上白色胡粉墊底" width="1000" height="972" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
+<img src="pic3-gongbi-silk-dark-background.webp" alt="背面先上白色胡粉墊底" width="780" height="780" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
 <figcaption style="font-size:0.85em;">背面先上白色胡粉墊底(參考圖須左右反轉或使用透光原理輔助)。</figcaption>
 </figure>
 
 <figure style="flex:1 1 220px;max-width:280px;margin:0;">
-<img src="pic2-gongbi-silk-dark-background.webp" alt="上完後正面的樣子，微微透出白色" width="1000" height="910" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
+<img src="pic2-gongbi-silk-dark-background.webp" alt="上完後正面的樣子，微微透出白色" width="780" height="780" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
 <figcaption style="font-size:0.85em;">上完後正面的樣子，微微透出白色。</figcaption>
 </figure>
 
 <figure style="flex:1 1 220px;max-width:280px;margin:0;">
-<img src="pic1-gongbi-silk-dark-background.webp" alt="就能在此之上進行顏料疊加" width="1000" height="790" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
+<img src="pic1-gongbi-silk-dark-background.webp" alt="就能在此之上進行顏料疊加" width="780" height="780" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
 <figcaption style="font-size:0.85em;">就能在此之上進行顏料疊加。</figcaption>
 </figure>
 </div>
