@@ -95,17 +95,17 @@ image_height: 850
 這條路對複雜花形特別關鍵：背面墊白能讓底稿的形狀直接透到正面，正面就有參考線可以依循，不用憑感覺猜邊界、猜錯重畫。我這件黑底紅花的花形線條密集，就是為了這點選了這條路，過程照片如下：
 
 <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
-<figure style="flex:1 1 220px;max-width:280px;max-width:220px；margin:0;">
+<figure style="flex:1 1 220px;max-width:220px;margin:0;">
 <img src="pic3-gongbi-silk-dark-background-v2.webp" alt="背面先上白色胡粉墊底" width="780" height="780" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
 <figcaption style="font-size:0.85em;">背面先上白色胡粉墊底(參考圖須左右反轉或使用透光原理輔助)。</figcaption>
 </figure>
 
-<figure style="flex:1 1 220px;max-width:280px;max-width:220px；margin:0;">
+<figure style="flex:1 1 220px;max-width:220px;margin:0;">
 <img src="pic2-gongbi-silk-dark-background-v2.webp" alt="上完後正面的樣子，微微透出白色" width="780" height="780" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
 <figcaption style="font-size:0.85em;">上完後正面的樣子，微微透出白色。</figcaption>
 </figure>
 
-<figure style="flex:1 1 220px;max-width:280px;max-width:220px；margin:0;">
+<figure style="flex:1 1 220px;max-width:220px;margin:0;">
 <img src="pic1-gongbi-silk-dark-background-v2.webp" alt="就能在此之上進行顏料疊加" width="780" height="780" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
 <figcaption style="font-size:0.85em;">就能在此之上進行顏料疊加。</figcaption>
 </figure>
