@@ -11,6 +11,12 @@ services:
     volumes:
       - .:/site                        # mount this repo into the container
       - bundle_cache:/usr/local/bundle # persist installed gems across rebuilds
+      # .claude is a symlink to /home/fung/workspace/pom-fung/.claude (shared skills across repos).
+      # Jekyll's reader resolves realpath on every entry (even excluded ones) to guard against
+      # symlinks pointing outside the site source — if the target isn't mounted, that resolution
+      # throws ENOENT before the exclude list is even consulted. Mounting the real target at the
+      # same absolute host path lets the symlink resolve inside the container too.
+      - /home/fung/workspace/pom-fung/.claude:/home/fung/workspace/pom-fung/.claude:ro
     command: >
       bundle exec jekyll serve
       --host 0.0.0.0
