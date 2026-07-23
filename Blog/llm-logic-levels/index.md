@@ -2,8 +2,13 @@
 layout: page/blog/blog
 title: "LLM 邏輯進階筆記：從一問一答到分工協作，六個層級"
 date: 2026-07-23
+lastmod: 2026-07-23
 categories: [學習筆記, LLM]
 tags: [LLM, agent, pseudo code, workflow]
+description: 用虛擬碼拆解 LLM 邏輯：從沒有記憶的單次問答，到工具呼叫、多角色協作、固定流程，最後平行處理多份工作，六層各附可跑 demo 與示意圖。
+author:
+  name: Fung
+  url: https://BianJiaoPie.com
 ---
 
 這是一篇學習筆記，用虛擬碼（pseudo code）整理我對 LLM 邏輯的理解——從最陽春的「問一句答一句」，一路疊加到「多個角色分工、平行處理很多工作」。全篇用同一個例子貫穿：**幫忙規劃東京旅行的 AI 助理**，每一層只加一個新概念，方便對照差異在哪裡。
