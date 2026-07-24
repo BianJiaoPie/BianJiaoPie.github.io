@@ -3,6 +3,7 @@ layout: page/blog/blog
 title: "LLM 邏輯進階筆記：從一問一答到分工協作，六個層級"
 date: 2026-07-23
 lastmod: 2026-07-23
+section: tech
 categories: [學習筆記, LLM]
 tags: [LLM, agent, pseudo code, workflow]
 description: 用虛擬碼拆解 LLM 邏輯：從沒有記憶的單次問答，到工具呼叫、多角色協作、固定流程，最後平行處理多份工作，六層各附可跑 demo 與示意圖。

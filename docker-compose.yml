@@ -26,5 +26,17 @@ services:
       --force_polling
       --incremental
 
+  browser:
+    profiles:
+      - browser
+    build:
+      context: ./browser
+    # host networking so it can reach jekyll-sp's localhost:14000 directly
+    network_mode: host
+    volumes:
+      - ./.browser:/output
+    tty: true
+    stdin_open: true
+
 volumes:
   bundle_cache:

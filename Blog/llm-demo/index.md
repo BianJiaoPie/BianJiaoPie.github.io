@@ -2,6 +2,7 @@
 layout: page/blog/blog
 title: "Gemini 聊天 Demo"
 date: 2026-07-22
+section: tech
 ---
 
 > 這是一個純前端的小工具：你的 Google AI API Key 只會存在**你自己瀏覽器的 localStorage**、只從瀏覽器直接打去 Google 的 Gemini API，不會經過本站任何伺服器（本站是純靜態網站，本來就沒有後端可以經手）。換瀏覽器、換裝置要重新貼一次 Key。

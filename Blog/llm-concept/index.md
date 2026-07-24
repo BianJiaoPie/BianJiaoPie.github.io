@@ -2,6 +2,7 @@
 layout: page/blog/blog
 title: "LLM Agent 概念：從基礎問答到多角色協作"
 date: 2026-07-22
+section: tech
 ---
 
 五個層級的 pseudo code，展示從「單純問答」到「會做事的 agent」、「多個角色互相協作」、「固定流程的 workflow」，再到「開票分工的 workflows」的演進。第三、四層有真的可以跑的程式（`team.js`、`workflow.js`），第五層純概念示意，實際實作參考 `Skill(agent-claude-bot)`。

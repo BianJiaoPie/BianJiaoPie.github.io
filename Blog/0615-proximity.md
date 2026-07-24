@@ -2,6 +2,10 @@
 layout: page/blog/blog
 title: "拉近或分開：用親密性原則，讓版面一目了然"
 date: 2026-06-15
+section: tech
+image: /Blog/0615-proximity.webp
+image_width: 664
+image_height: 798
 categories: [設計, 排版]
 tags: [親密性, proximity, layout, vanilla, vue, react]
 ---
