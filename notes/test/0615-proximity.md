@@ -3,7 +3,7 @@ layout: page/blog/blog
 title: "拉近或分開：用親密性原則，讓版面一目了然"
 date: 2026-06-15
 section: tech
-image: /Blog/0615-proximity.webp
+image: /notes/test/0615-proximity.webp
 image_width: 664
 image_height: 798
 categories: [設計, 排版]
@@ -12,7 +12,7 @@ tags: [親密性, proximity, layout, vanilla, vue, react]
 
 > 只要分門別類，易讀程度就能提升！一邊整理資訊，一邊分門別類，再以版面配置呈現。
 
-![BEFORE / AFTER：把馬卡龍與品名拉近或分開](/Blog/0615-proximity.webp)
+![BEFORE / AFTER：把馬卡龍與品名拉近或分開](/notes/test/0615-proximity.webp)
 
 ## 為什麼要「拉近或分開」？
 
