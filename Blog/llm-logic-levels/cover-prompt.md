@@ -1,52 +1,49 @@
 # 封面圖提示詞 — LLM 邏輯進階筆記：從一問一答到分工協作，六個層級
 
-> ⚠️ **無 cover-spec、風格未對齊社群**：`brand-assets/bianjiaopie/` 底下沒有 `cover-spec.md`，依 skill 規則 fallback 讀 `brand-assets/homunmage/cover-spec.md` 當跨品牌預設（等距 3D 基調，2026-06-03 拍板）。bianjiaopie 之後若要建立自己的視覺規格，建議另開 `brand-asset-setup` 補這份檔案。
+> ⚠️ **無 cover-spec、風格未對齊社群**：`brand-assets/bianjiaopie/` 底下沒有 `cover-spec.md`，fallback 讀 `brand-assets/homunmage/cover-spec.md` 當跨品牌預設（clean tech-editorial 寫實電影感）。bianjiaopie 之後若要建立自己的視覺規格，建議另開 `brand-asset-setup` 補這份檔案。
 
 ## 英文主標＋副標（圖內文字，逐字）
 
 - 主標：**Six Levels of LLM Logic**
-- 副標：**From single-shot Q&A to parallel AI workflows**
+- 副標：**From single-turn chat to parallel AI teams**
 
 ## 視覺概念
 
-六個等距立方平台由左下往右上呈階梯狀堆疊，每階微微向右上位移；最低階台面上是一個孤零零的對話框圖示，最高階台面上是三個並排發光的小節點（代表平行工作）；階梯之間有細光帶連接暗示流程演進；主體整體推向畫面右半，左半留空。
+文章用「AI 助理規劃東京旅行」當敘事載體去教一個抽象主題（LLM 系統六個層級），旅行道具（地圖、票根、懷錶……）本身也是發明出來代表抽象函式呼叫的隱喻小物，不是文章真正的具體例子——所以不用旅行道具，改成單一發明隱喻，照 `brand-assets/homunmage/cover-spec.md` 的參照範例手法（小物件與其背後同輪廓的巨大結構，兩種尺度）：
 
-風格來源：`brand-assets/homunmage/cover-spec.md`（跨品牌 fallback，非 bianjiaopie 專屬）。
+一個小巧、乾淨的霧面玻璃對話泡泡（speech bubble）安穩立在極簡基座上，前景清晰對焦、暖琥珀微光從內透出——它的陰影延伸出去，是一整片由同一輪廓、無數個相同對話泡泡組成的陣列，向畫面深處排開、逐漸虛化。同一個形狀，兩種規模：一句簡單問答，跟同時運作的大量平行對話，其實是同一件事的不同尺度。冷色調基底、單一暖色點綴、主體整體推向畫面右側。
 
-獨立評分（5 候選、各自獨立 Agent 打分，不自評；rubric：主題辨識度／專業可信感／風格一致性／資訊層次，各 0-5）：
-
-| 候選 | 主題辨識度 | 專業可信感 | 風格一致性 | 資訊層次 | 總分 | 結果 |
-|---|---|---|---|---|---|---|
-| **堆疊管線／升階梯（採用）** | 4 | 5 | 5 | 4 | **18/20** | 合格，最低項 4 分，直接收斂 |
-| 分岔管道 | 4 | 4 | 5 | 4 | 17/20 | 合格，未採用（次高分） |
-| 六個發光方塊樓梯 | 4 | 4 | 5 | 3 | 16/20 | 不合格（資訊層次 <4，符號過雜） |
-| 生長中的助理小人偶 | 3 | 3 | 3 | 3 | 12/20 | 不合格（偏童趣、與風格基調衝突） |
-| 節點網絡收束 | 3 | 2 | 3 | 4 | 12/20 | 不合格（落入 AI 陳腔濫調意象） |
+**標題排版**（固定風格，參照 ai-poc-to-production-gap 封面）：
+- 標題文字 vs 背景＝明暗互補：文字顏色不寫死，跟著左側留白區實際渲染的明暗走（偏淺配深色字、偏深配淺色字）。
+- 色帶 vs 畫面基底＝色溫互補，不是明暗對比：色帶用 homunmage cover-spec 定義的點綴色（琥珀），因為這份 cover-spec 是冷底＋暖點綴，色溫相反才會跳出來；不用跟著背景明暗切換。
+- 色帶 vs 標題＝視覺重量分工＋位置＋長度：色帶是細線，比副標更輕，扮演分隔線角色；**位置在主標和副標中間**（不是副標下方）；**長度很短**，大約主標一個字母寬度的 1.5 倍，不是跟文字區塊同寬。
+- 排版固定：主標粗體最大字、最多兩行；色帶緊接在主標下方（短線）；副標接在色帶下方，一般字重、單行、明顯更小、跟主標同色系。
 
 ## 提示詞（可直接貼進 DALL·E／ChatGPT／Gemini 等生圖工具）
 
 ```
-Clean isometric 3D illustration, deep navy + violet/purple palette, soft studio lighting, minimal uncluttered background. Six simple glowing isometric platform blocks arranged in an ascending staircase from bottom-left to top-right, each step offset slightly further right and upward. The lowest platform holds a single small speech-bubble icon, standing alone. The highest platform holds three small glowing nodes arranged side by side, representing parallel work. Thin glowing light trails connect each step to the next, suggesting progression. The entire staircase composition is pushed to the RIGHT half of the frame; the entire LEFT HALF is empty negative space reserved for title text.
+Cinematic editorial 3D render, photorealistic materials and lighting. A single small, flawless speech-bubble-shaped object in frosted glass, resting alone on a clean minimalist pedestal, in crisp sharp focus, glowing softly from within with a single warm amber light. Behind and around it, emerging from its own shadow and receding into a shallow-depth-of-field blur, an orderly field of many identical frosted-glass speech-bubble shapes — the exact same silhouette, repeated at a smaller scale — extends outward like an army, each with a faint amber glow. The single glowing bubble in sharp focus and the vast field behind it share the same silhouette, implying a single simple exchange and a massively parallel system of exchanges are the same shape at a different scale. Cool base palette of slate blue and warm off-white, with the amber glow as the only warm accent. Soft atmospheric, directional lighting. The entire scene is pushed to the RIGHT half of the frame; the entire LEFT HALF of the frame is empty negative space reserved for title text.
 
-Overlay text in the left third of the frame, vertically centered, clean bold sans-serif, white text, headline larger than subhead:
-Headline: "Six Levels of LLM Logic"
-Subhead: "From single-shot Q&A to parallel AI workflows"
+Overlay text in the left third of the frame, vertically centered. Choose a text color with strong contrast against whatever that left-side background actually renders as (light or dark) — do not default to a fixed color:
+Headline: "Six Levels of LLM Logic" — bold sans-serif, largest size, up to two lines.
+Below the headline, a very short thin horizontal accent line — only about 1.5x the width of a single headline letter, NOT spanning the text block — in the same warm amber accent color used for the bubble's glow.
+Subhead: "From single-turn chat to parallel AI teams" — placed below that short accent line, regular weight (much lighter than headline), same color as the headline, one line, noticeably smaller than headline.
 
-No other text, no gibberish letters, no random words, no watermark, no third-party logo, no Chinese characters. Wide 16:9 banner, 1920x1080. Keep the staircase and light trails within the central 1.91:1 (1200x630) safe zone so nothing critical is cropped when shared as an OG social preview — avoid placing key elements flush against any edge.
+No other text, no gibberish letters, no random words, no watermark, no third-party logo, no UI screenshots, no Chinese characters. Wide 16:9 banner, 1920x1080. Keep the bubble and the field behind it within the central 1.91:1 (1200x630) safe zone so nothing critical is cropped when shared as an OG social preview — avoid placing key elements flush against any edge.
 ```
 
 ## 出圖後
 
-存成 `Blog/llm-logic-levels/cover.webp`，補進 `index.md` frontmatter：
+已出圖，存成 `ChatGPT_Image_llm-logic-levels.webp`（1672×941，原檔名含空格已去除），放在 `Blog/llm-logic-levels/`。`index.md` frontmatter 已補：
 
 ```yaml
-image: /Blog/llm-logic-levels/cover.webp
-image_width: 1920
-image_height: 1080
+image: /Blog/llm-logic-levels/ChatGPT_Image_llm-logic-levels.webp
+image_width: 1672
+image_height: 941
 ```
 
-補完後 og:image／twitter:image／JSON-LD image 會被 jekyll-seo-tag 自動一起補齊（不用手動寫 meta 標籤），`tech-seo.md` 裡記錄的 schema.org FAIL 也會轉 PASS。
+og:image／twitter:image／JSON-LD image 會被 jekyll-seo-tag 自動一起補齊（不用手動寫 meta 標籤），`tech-seo.md` 裡記錄的 schema.org FAIL（缺 `image`）也會轉 PASS。
 
 ## fung-cover 上傳
 
-**跳過**——bianjiaopie 與 LatticeCast 發布體系分開（2026-07-14 拍板），不進 fung-cover 表。
+**跳過**——bianjiaopie 與 LatticeCast 發布體系分開，不進 fung-cover 表。

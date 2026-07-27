@@ -10,6 +10,9 @@ description: 用虛擬碼拆解 LLM 邏輯：從沒有記憶的單次問答，�
 author:
   name: Fung
   url: https://BianJiaoPie.com
+image: /Blog/llm-logic-levels/ChatGPT_Image_llm-logic-levels.webp
+image_width: 1672
+image_height: 941
 ---
 
 這是一篇學習筆記，用虛擬碼（pseudo code）整理我對 LLM 邏輯的理解——從最陽春的「問一句答一句」，一路疊加到「多個角色分工、平行處理很多工作」。全篇用同一個例子貫穿：**幫忙規劃東京旅行的 AI 助理**，每一層只加一個新概念，方便對照差異在哪裡。

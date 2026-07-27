@@ -15,7 +15,7 @@ description: 我的絹本黑底已經畫好，卡在紅花怎麼畫才不糊—�
 author:
   name: Fung
   url: https://BianJiaoPie.com
-image: /Blog/cover-gongbi-silk-dark-background-v4.webp
+image: /Blog/gongbi-silk-dark-background/Gemini_Generated_Image_gongbi-silk-dark-background.webp
 image_width: 1376
 image_height: 768
 ---
