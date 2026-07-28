@@ -3,7 +3,7 @@ layout: base
 title: Blog
 ---
 
-{%- assign categories = "tech|前端技術 × 筆記,painting|水墨膠彩 × 絹本,life|生活藝術 × 日常,notes|雜記" | split: "," -%}
+{%- assign categories = "tech|前端技術 × 筆記,painting|水墨膠彩 × 絹本,life|生活藝術 × 日常" | split: "," -%}
 
 <h1 class="blog-page-title">Blog</h1>
 
