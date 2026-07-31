@@ -2,7 +2,7 @@
 layout: page/blog/blog
 title: "LLM 邏輯進階筆記：從一問一答到分工協作，六個層級"
 date: 2026-07-23
-lastmod: 2026-07-23
+last_modified_at: 2026-07-23
 section: tech
 categories: [學習筆記, LLM]
 tags: [LLM, agent, pseudo code, workflow]

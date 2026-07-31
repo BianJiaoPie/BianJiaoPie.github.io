@@ -1,6 +1,7 @@
 # 封面圖提示詞 — gongbi-silk-dark-background
 
-> ⚠️ **風格來源備註**：`brand-assets/bianjiaopie/` 目前沒有 `cover-spec.md`，fallback 讀取 `brand-assets/homunmage/cover-spec.md` 當跨品牌預設（clean tech-editorial 寫實電影感）。之後若邊角派要建立自己的封面風格規格，建議另立 `brand-assets/bianjiaopie/cover-spec.md`。
+> **風格來源（2026-07-31 更新）**：本篇產出時 `brand-assets/bianjiaopie/cover-spec.md` 尚不存在，fallback 讀了 `brand-assets/homunmage/cover-spec.md` 當跨品牌預設。**該檔現已建立**，邊角派不再 fallback homunmage。
+> ⚠️ **本篇與現行規格的兩處落差**（已出圖、暫不重做，僅留記錄）：① 版位——本篇是**文字左、主體右**，但 cover-spec 現行規定**繪畫線鏡像**（主體左三分之二、文字右三分之一）。② 渲染語言——本篇走 `cinematic editorial 3D render`，繪畫線現行規格是**紀實／檔案靜物攝影**。所幸本篇主體是真實物件（黑絹、木框、毛筆、顏料碟）且未踩廣告語彙禁用清單，成品仍成立。日後若重生封面，照 cover-spec 繪畫線關鍵詞重跑。
 > 只發中文單語言（英文為 reference，not published），圖內文字仍照規則統一用英文。
 
 ## 英文主標＋副標（逐字）

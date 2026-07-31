@@ -2,7 +2,7 @@
 title: 工筆畫深色背景畫法：黑底畫紅花三種絹本技法（分染、裏彩色、面蓋）
 slug: gongbi-silk-dark-background
 date: 2026-07-14
-lastmod: 2026-07-17
+last_modified_at: 2026-07-17
 cover: 待補（cover-image-prompt 產出提示詞後製作，尚無實際檔案）
 tags:
   - 工筆畫

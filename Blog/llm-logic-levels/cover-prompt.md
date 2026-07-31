@@ -1,6 +1,7 @@
 # 封面圖提示詞 — LLM 邏輯進階筆記：從一問一答到分工協作，六個層級
 
-> ⚠️ **無 cover-spec、風格未對齊社群**：`brand-assets/bianjiaopie/` 底下沒有 `cover-spec.md`，fallback 讀 `brand-assets/homunmage/cover-spec.md` 當跨品牌預設（clean tech-editorial 寫實電影感）。bianjiaopie 之後若要建立自己的視覺規格，建議另開 `brand-asset-setup` 補這份檔案。
+> **風格來源（2026-07-31 更新）**：本篇產出時 `brand-assets/bianjiaopie/cover-spec.md` 尚不存在，fallback 讀了 `brand-assets/homunmage/cover-spec.md` 當跨品牌預設。**該檔現已建立**，邊角派不再 fallback homunmage。
+> ⚠️ **本篇成品事後被判定踩到規格**：已出圖的 `ChatGPT_Image_llm-logic-levels.webp` 使用了**基座（pedestal）＋物件內部發光＋戲劇打光**，構成「產品發表會」語彙——cover-spec 已據此立為程式線的禁用項（與 silk-painting 那張的「食品廣告」語彙同源）。**此圖已發布、暫不重做**，僅留記錄；日後若重生封面，照 cover-spec 的「去廣告化寫實 3D」關鍵詞重跑（無基座、無內部發光、物件放進真實環境）。
 
 ## 英文主標＋副標（圖內文字，逐字）
 
