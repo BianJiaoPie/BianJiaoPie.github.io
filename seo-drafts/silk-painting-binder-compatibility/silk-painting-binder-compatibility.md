@@ -28,13 +28,17 @@ image_height: 768
 
 膠礬水，就是在膠水裡加入少量明礬調成的透明混合液。膠是最原始的繪畫媒材之一，取自動物的皮、骨、筋腱；明礬則是含結晶水的硫酸鉀鋁複鹽，無色透明。兩者混合後有幾個關鍵功能：中和紙絹本身的鹼性、防止顏料滲透基底、固定顏料顆粒防止剝落，同時也有一定防蟲效果。
 
+<figure style="max-width:420px;margin:0 auto;">
 <img src="pic1-silk-painting-binder-compatibility.webp" alt="明礬的八面體透明結晶特寫" width="1600" height="1200" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
-*明礬結晶。圖片來源：[Ude](https://commons.wikimedia.org/wiki/File:Potassium_alum_octahedral_crystal.jpg)，CC BY-SA 3.0*
+<figcaption style="font-size:0.85em;">明礬結晶。圖片來源：<a href="https://commons.wikimedia.org/wiki/File:Potassium_alum_octahedral_crystal.jpg">Ude</a>，CC BY-SA 3.0</figcaption>
+</figure>
 
 生紙、生絹要處理成能作畫的熟紙、熟絹，膠礬水是關鍵一步——絹本通常要上三次（正面、背面、正面），礬水才會均勻分佈。工筆重彩講究反覆分染、層層堆疊顏色，這就是古畫論裡說的「三礬九染」——但「三」跟「九」是傳統說法裡的**虛數**，代表「多次」，不是字面真的算三次跟九次；實際操作是**分染很多輪、薄薄地一層層疊色，每隔好幾輪染色才罩一次膠礬水固色**，不是每疊一層顏色就上一次膠礬水。膠礬水本身有代價（後面會講），用太密反而划不來，這也是為什麼傳統技法本來就把它設計成「間隔多輪才用一次」，不是逢層必上。
 
+<figure style="max-width:640px;margin:0 auto;">
 <img src="diagram-sanfan-jiuran.svg" alt="三礬九染疊層順序示意圖：多輪分染之間才罩一次膠礬水" width="640" height="460" loading="lazy" style="width:100%;height:auto;">
-*示意圖畫 3 層膠礬水，是照傳統技法名稱畫的示意比例，不是科學實驗驗證過的「安全層數」——下一節會講到，目前查到的老化研究只測過「塗一次 vs 完全不塗」，沒有人測過疊加幾層之後才開始明顯脆化，圖上的層數請當作技法概念理解，不要當成「幾層以內安全」的數字依據。
+<figcaption style="font-size:0.85em;">示意圖畫 3 層膠礬水，是照傳統技法名稱畫的示意比例，不是科學實驗驗證過的「安全層數」——下一節會講到，目前查到的老化研究只測過「塗一次 vs 完全不塗」，沒有人測過疊加幾層之後才開始明顯脆化，圖上的層數請當作技法概念理解，不要當成「幾層以內安全」的數字依據。</figcaption>
+</figure>
 
 絹本另外還有個特性會放大這個問題：絹是半透明的，正面與背面都能著色，很多技法（像是背染、裏彩色）就是利用這個半透明特性做出來的層次感。我在另一篇整理深色背景畫主體的技法時也處理過類似的絹本疊層問題（見[工筆畫深色背景畫法](/Blog/gongbi-silk-dark-background/)），跟這篇的膠結劑衝突是兩個不同層次的坑——一個是「顏色透不透得出來」，一個是「膠會不會互相排斥剝落」，但都源自絹本疊層創作的特殊性。
 
@@ -50,8 +54,10 @@ image_height: 768
 | 植物膠（阿拉伯膠） | 多醣類，水溶性 | 操作便利、乾燥快 | 韌性差，不宜厚塗 |
 | 合成膠（壓克力乳液） | 高分子聚合物，乾後防水 | 附著力極強、穩定性高 | 包覆性太強，影響礦物顏料發色 |
 
+<figure style="max-width:420px;margin:0 auto;">
 <img src="pic2-silk-painting-binder-compatibility.webp" alt="動物膠（骨膠）的琥珀色顆粒特寫" width="1600" height="1064" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
-*動物膠（骨膠）顆粒。圖片來源：[Simon Eugster](https://commons.wikimedia.org/wiki/File:Knochenleim_Granulat.jpg)，CC BY-SA 3.0*
+<figcaption style="font-size:0.85em;">動物膠（骨膠）顆粒。圖片來源：<a href="https://commons.wikimedia.org/wiki/File:Knochenleim_Granulat.jpg">Simon Eugster</a>，CC BY-SA 3.0</figcaption>
+</figure>
 
 多數教學文章講到這裡就停在「怎麼調膠礬水」，但真正決定你會不會踩坑的，是背後的數字。根據國立台灣美術館發行的期刊文章，動物膠依來源分成皮膠與骨膠，皮膠水溶液呈中性（pH 6.5–7.4），骨膠則略偏酸性（pH 5.8–6.3）；動物膠拉伸強度可達 444.8mpa、剪切強度常超過 20.68mpa，是相當堅韌的材料。但它是**可逆性膠**——加熱會變回液態、冷卻又固化，前提是**溫度不能超過攝氏 70 度**，一旦超過就會破壞蛋白質結構、永久喪失黏性；反覆加熱或加鹽同樣會讓它難以再固結。這跟坊間膠礬水教學裡常提到的「煮膠溫度不得超過 70 度」是同一件事，只是這裡多了一層學術數據佐證，而不只是經驗談。
 
@@ -80,8 +86,10 @@ image_height: 768
 
 **這裡要老實講清楚這項數據的邊界**：這個實驗測的是「塗一次膠礬水」跟「完全不塗」的二元比較，**不是**疊塗好幾層之後的累積效應——目前查到的資料裡，沒有任何研究測過「疊加幾層膠礬水才會開始明顯脆化」這種劑量門檻，前面那張三礬九染示意圖畫 3 層，也只是照傳統技法的說法示意、不是安全層數的科學根據。這代表：膠礬水會讓紙絹偏酸、長期不利保存，這件事是有研究支持的；但「疊越多層風險越高」是常識上合理的推論，不是這份研究直接測出來的數字。寫作當下（截至 2026 年初）也沒查到更廣泛的後續驗證，實際操作前建議自己也做小範圍測試。
 
+<figure style="max-width:300px;margin:0 auto;">
 <img src="pic3-silk-painting-binder-compatibility.webp" alt="絹本工筆創作局部，紅色花卉為礦物顏料厚塗區域" width="794" height="1244" loading="lazy" style="width:100%;height:auto;border-radius:8px;">
-*這件作品的局部現況（拍攝於 2026 年 7 月），紅花部分就是本文討論的礦物顏料厚塗區域。*
+<figcaption style="font-size:0.85em;">這件作品的局部現況（拍攝於 2026 年 7 月），紅花部分就是本文討論的礦物顏料厚塗區域。</figcaption>
+</figure>
 
 原本打算在兩個膠結劑之間，局部刷一層膠礬水做界面，隔離植物膠與動物膠。但查完酸化風險的資料後，我暫且保留這個做法——雖然沒有研究證明疊層次數跟脆化程度的關係，但明礬確實會讓紙絹偏酸。**目前階段性的做法是整幅畫完才上一層膠礬水**當最後保護層。但這還不是定案，我的上色工作流還在邊做邊調整中。基於「膠礬水有酸化代價」這個確定事實的謹慎選擇，不是精算過的最佳解——如果你的疊層更複雜、體系衝突更明顯，中途隔離可能還是必要的。
 
