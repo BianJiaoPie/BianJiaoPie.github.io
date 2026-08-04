@@ -114,8 +114,8 @@ image_height: 768
 
 ## 待辦（自本次檢核產生）
 
-- **膠礬水實拍照**：原文第 22 行有 `<!-- 🖼️ 待補：調好的膠礬水（透明液體）實拍照，Wikimedia 上沒找到現成可用的，建議自己拍一張 -->`。依 checklist §8「不准帶著待填標記發布」已移除該 comment，**但需求仍在**——自己拍一張後補進〈膠礬水是什麼〉節，補完把 `lastmod` 往後推。
-- **反向內鏈**：`gongbi-silk-dark-background` 目前沒有連回本文。兩篇是互補題（一個講顏色透不透得出來、一個講膠會不會排斥剝落），建議在該文加一條回鏈形成內鏈對。
+- ~~**膠礬水實拍照**~~ **使用者決定不補**：原文的 `<!-- 🖼️ 待補 -->` comment 已於本次檢核移除，配圖需求同步撤銷，本節維持純文字。
+- ~~**反向內鏈**~~ ✅ **已完成**：`gongbi-silk-dark-background` 的〈為什麼深色背景上畫主體這麼難〉節加了一條回鏈到本文（Blog 與 seo-drafts 兩份同步改，該文 `last_modified_at` 已推到 2026-08-04），內鏈對成立。
 - ~~全站缺 `publisher`~~ **不用處理，已查證撤回**：Google 官方 Article 文件明載沒有必填屬性，`publisher` 不在必填也不在建議清單（2023-11 起 logo 相關要求併進 Organization markup）。站上三篇都沒有 publisher，**不影響 Article 的結構化資料資格**。若日後做了 logo，那是為了 Organization／知識面板與封面角標，不是為了補這一欄。
 - **`validate-schema.sh` 對本站型不適用**：該腳本在 `tech-seo.md` 裡找手寫的 JSON-LD 區塊，但 plugin 驅動的站台本來就不會有——實測既有的 `gongbi-silk-dark-background` 也同樣 FAIL。本檔加了「預期產出」基準區塊後可通過，但那是副作用不是目的；真正的驗證仍是發布後的 Rich Results Test。
 
@@ -123,4 +123,4 @@ image_height: 768
 
 - `fung-seo` upsert：**SKIP** —— bianjiaopie 不進 LatticeCast 發布體系（非失敗、非遺漏）
 - `cover-image-prompt`：**略過硬接** —— `cover-prompt.md` 已存在（本日稍早依新版 `brand-assets/bianjiaopie/cover-spec.md` 重跑過並出圖、人審通過），依規則不覆蓋
-- `social-platform-adapt`：待 invoke
+- `social-platform-adapt`：**已跑但成果作廢**（2026-08-04）—— 當日產出 10 檔於 `social/`（Threads／X／Facebook 各 3 篇＋Instagram 單篇），同日 `brand-assets/bianjiaopie/seo-strategy.md` 改版：Facebook 與 X 退出經營，YouTube／Instagram／Threads 三個主經營平台一律「不主動生 AI 文章」。**「部落格長文改寫成社群貼文」這條流程對本站停用**，10 檔全部不發布。`fung-social` upsert 本就 SKIP（bianjiaopie 不進該表）。
