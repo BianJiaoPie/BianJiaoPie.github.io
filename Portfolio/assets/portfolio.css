@@ -1,9 +1,9 @@
 .artwork-page {
-  --artwork-paper: #211f1c;
-  --artwork-ink: #eeeae3;
-  --artwork-muted: #aaa49a;
-  --artwork-rule: #48443e;
-  background: #171614;
+  --artwork-paper: #181818;
+  --artwork-ink: #dddddd;
+  --artwork-muted: #aaaaaa;
+  --artwork-rule: #444444;
+  background: #181818;
   color: var(--artwork-ink);
   margin: 0 auto;
   max-width: 70rem;
@@ -224,7 +224,8 @@
 }
 
 .artwork-figure {
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
+  width: 66.6667%;
 }
 
 .artwork-figure img {
