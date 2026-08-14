@@ -28,6 +28,7 @@ repository: BianJiaoPie/BianJiaoPie.github.io
 header_pages:
   - About/index.md
   - Blog/index.md
+  - Portfolio/index.md
   - Contact/index.md
 
 defaults:
