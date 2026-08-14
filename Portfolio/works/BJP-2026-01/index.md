@@ -5,6 +5,7 @@ published: true
 artwork_id: BJP-2026-01
 title: 幸子
 title_en: Sachiko
+artist: Fung 蔡承芳
 description: 私人客製作品〈幸子〉，以油桐花、彼岸花與人物裂痕探索生命、死亡與蛻變之間的界線。
 year: 2026
 status: completed
@@ -28,6 +29,7 @@ tags:
   - 沉默之丘 f
   - 絹本
 cover: /Portfolio/works/BJP-2026-01/images/BJP-2026-01-cover.webp
+thumbnail: /Portfolio/works/BJP-2026-01/images/BJP-2026-01-thumbnail.webp
 image: /Portfolio/works/BJP-2026-01/images/BJP-2026-01-cover.webp
 cover_ready: true
 cover_alt: 〈幸子〉人物肖像，女子臉龐浮現裂痕，白色油桐花與紅色彼岸花分列畫面兩側。

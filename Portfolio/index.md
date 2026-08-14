@@ -20,13 +20,21 @@ description: 蔡承芳的繪畫作品集，收錄完整作品、細節與創作�
     <article class="portfolio-work">
       <a href="{{ artwork.url | relative_url }}" class="portfolio-work__image">
         {%- if artwork.cover_ready and artwork.cover -%}
-        <img src="{{ artwork.cover | relative_url }}" alt="{{ artwork.cover_alt | default: artwork.title | escape }}" loading="lazy">
+        <img src="{{ artwork.thumbnail | default: artwork.cover | relative_url }}" alt="{{ artwork.cover_alt | default: artwork.title | escape }}" loading="lazy">
         {%- endif -%}
       </a>
       <div class="portfolio-work__text">
         <h2><a href="{{ artwork.url | relative_url }}">〈{{ artwork.title | escape }}〉</a></h2>
         {%- if artwork.title_en -%}<p>{{ artwork.title_en | escape }}</p>{%- endif -%}
-        <p>{{ artwork.year }}{% if artwork.availability_label %} · {{ artwork.availability_label }}{% endif %}</p>
+        <dl class="portfolio-work__meta">
+          <div><dt>作者</dt><dd>{{ artwork.artist | default: 'Fung 蔡承芳' | escape }}</dd></div>
+          <div><dt>作品編號</dt><dd>{{ artwork.artwork_id | escape }}</dd></div>
+          <div><dt>年份</dt><dd>{{ artwork.year }}</dd></div>
+          <div><dt>媒材</dt><dd>{{ artwork.medium | join: '、' }}</dd></div>
+          <div><dt>尺寸</dt><dd>{{ artwork.dimensions.width_cm }} × {{ artwork.dimensions.height_cm }} cm</dd></div>
+          {%- if artwork.availability_label -%}<div><dt>狀態</dt><dd>{{ artwork.availability_label | escape }}</dd></div>{%- endif -%}
+        </dl>
+        <a class="portfolio-work__more" href="{{ artwork.url | relative_url }}">查看完整作品資料 →</a>
       </div>
     </article>
     {%- endfor -%}
