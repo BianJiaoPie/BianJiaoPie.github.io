@@ -1,9 +1,9 @@
 .artwork-page {
-  --artwork-paper: #f5f2ec;
-  --artwork-ink: #302e2b;
-  --artwork-muted: #6d6962;
-  --artwork-rule: #d8d2c8;
-  background: #fff;
+  --artwork-paper: #211f1c;
+  --artwork-ink: #eeeae3;
+  --artwork-muted: #aaa49a;
+  --artwork-rule: #48443e;
+  background: #171614;
   color: var(--artwork-ink);
   margin: 0 auto;
   max-width: 70rem;
@@ -107,7 +107,7 @@
 .artwork-card__visual {
   align-self: center;
   aspect-ratio: 26 / 35;
-  background: #dedad3;
+  background: #111;
   box-shadow: 0 0.4rem 1.4rem rgb(36 32 27 / 16%);
   overflow: hidden;
 }
