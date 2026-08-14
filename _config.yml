@@ -54,6 +54,13 @@ exclude:
   - seo-drafts/
   - notes/
   - .claude
+  - .bundle/
+  - vendor/bundle/
+  - Portfolio/works/*/images/*.jpg
+  - Portfolio/works/*/images/*.jpeg
+  - Portfolio/works/*/images/*.png
+  - Portfolio/works/*/images/*.heic
+  - Portfolio/works/*/images/*.heif
 
 # Build settings
 remote_theme: jekyll/minima
