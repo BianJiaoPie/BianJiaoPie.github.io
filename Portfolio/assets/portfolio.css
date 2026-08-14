@@ -34,8 +34,8 @@
 
 .portfolio-grid {
   display: grid;
-  gap: 3rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 2.5rem 1.25rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .portfolio-work__image {
@@ -72,6 +72,27 @@
   color: #aaa;
   font-size: 0.85rem;
   margin: 0.15rem 0;
+}
+
+@media (max-width: 950px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid {
+    gap: 2rem 0.8rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-work__text h2 {
+    font-size: 1rem;
+  }
+
+  .portfolio-work__text p {
+    font-size: 0.75rem;
+  }
 }
 
 .artwork-card {
