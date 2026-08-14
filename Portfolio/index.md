@@ -5,12 +5,12 @@ description: 蔡承芳的繪畫作品集，收錄完整作品、細節與創作�
 ---
 
 <link rel="stylesheet" href="{{ '/Portfolio/assets/portfolio.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/section-pages.css' | relative_url }}">
 
 <div class="portfolio-index">
-  <header class="portfolio-index__header">
-    <p>Selected Works</p>
-    <h1>Portfolio</h1>
-    <p>繪畫作品、細節與創作記錄。</p>
+  <header class="section-page-header">
+    <h1 class="section-page-title">Portfolio</h1>
+    <p class="section-page-description">繪畫作品、細節與創作記錄。</p>
   </header>
 
   {%- assign artworks = site.pages | where: "type", "artwork" | where: "published", true | sort: "year" | reverse -%}

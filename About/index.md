@@ -1,9 +1,15 @@
 ---
-layout: page
+layout: base
 title: About
 ---
 
-# 關於邊角派 BianJiaoPie
+<link rel="stylesheet" href="{{ '/assets/css/section-pages.css' | relative_url }}">
+
+<header class="section-page-header">
+  <h1 class="section-page-title">About</h1>
+</header>
+
+## 關於邊角派 BianJiaoPie
 
 Hi，這裡是邊角派，Fung 的個人網站——網路世界一角的數位工作室。
 

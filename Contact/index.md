@@ -1,10 +1,16 @@
 ---
-layout: page
+layout: base
 title: Contact
 permalink: /Contact/
 redirect_from:
   - /contact/
 ---
+
+<link rel="stylesheet" href="{{ '/assets/css/section-pages.css' | relative_url }}">
+
+<header class="section-page-header">
+  <h1 class="section-page-title">Contact</h1>
+</header>
 
 <style>
   .contact-form {

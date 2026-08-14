@@ -3,9 +3,13 @@ layout: base
 title: Blog
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/section-pages.css' | relative_url }}">
+
 {%- assign categories = "tech|前端技術 × 筆記,painting|水墨膠彩 × 絹本,life|生活藝術 × 日常" | split: "," -%}
 
-<h1 class="blog-page-title">Blog</h1>
+<header class="section-page-header">
+  <h1 class="section-page-title">Blog</h1>
+</header>
 
 <div class="blog-layout">
   <nav class="blog-sidebar" aria-label="文章分類">
@@ -104,9 +108,6 @@ title: Blog
     flex: 1;
     min-width: 0;
     text-decoration: none;
-  }
-  .blog-page-title {
-    text-align: center;
   }
   @media (max-width: 800px) {
     .blog-layout {

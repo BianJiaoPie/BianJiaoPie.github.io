@@ -1,0 +1,18 @@
+.section-page-header {
+  border-bottom: 1px solid #444;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.section-page-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.section-page-description {
+  color: #aaa;
+  margin: 0.6rem 0 0;
+}
