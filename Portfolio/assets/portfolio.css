@@ -91,7 +91,8 @@
   aspect-ratio: 26 / 35;
   background: #111;
   box-shadow: 0 0.4rem 1.4rem rgb(36 32 27 / 16%);
-  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .artwork-card__visual img {
@@ -104,7 +105,9 @@
 }
 
 .artwork-card__visual:hover img {
-  transform: scale(1.08);
+  position: relative;
+  transform: scale(2);
+  z-index: 2;
 }
 
 .artwork-card__placeholder {
@@ -223,50 +226,6 @@
   width: 100%;
 }
 
-.artwork-lightbox {
-  background: rgb(0 0 0 / 86%);
-  border: 0;
-  height: min(80vh, 60rem);
-  max-height: 80vh;
-  max-width: 80vw;
-  padding: 3rem 2rem 2rem;
-  width: min(80vw, 60rem);
-}
-
-.artwork-lightbox::backdrop {
-  background: rgb(0 0 0 / 86%);
-}
-
-.artwork-lightbox__image {
-  display: block;
-  height: auto;
-  margin: auto;
-  max-height: calc(80vh - 5rem);
-  max-width: calc(80vw - 4rem);
-  object-fit: contain;
-  width: auto;
-}
-
-.artwork-lightbox__close {
-  background: transparent;
-  border: 1px solid rgb(255 255 255 / 55%);
-  border-radius: 50%;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.5rem;
-  height: 2.5rem;
-  line-height: 1;
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  width: 2.5rem;
-}
-
-.artwork-lightbox__close:hover,
-.artwork-lightbox__close:focus-visible {
-  background: rgb(255 255 255 / 15%);
-}
-
 .artwork-figure figcaption {
   color: var(--artwork-muted);
   font-size: 0.82rem;
@@ -298,19 +257,6 @@
 
   .artwork-card__visual:hover img {
     transform: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .artwork-lightbox {
-    height: 80vh;
-    max-width: 92vw;
-    width: 92vw;
-  }
-
-  .artwork-lightbox__image {
-    max-height: calc(80vh - 5rem);
-    max-width: calc(92vw - 4rem);
   }
 }
 
