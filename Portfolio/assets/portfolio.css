@@ -95,6 +95,7 @@
 }
 
 .artwork-card__visual img {
+  cursor: zoom-in;
   display: block;
   height: 100%;
   object-fit: contain;
@@ -218,10 +219,55 @@
 }
 
 .artwork-figure img {
+  cursor: zoom-in;
   display: block;
   height: auto;
   transition: transform 300ms ease;
   width: 100%;
+}
+
+.artwork-lightbox {
+  background: rgb(0 0 0 / 86%);
+  border: 0;
+  height: 100%;
+  max-height: none;
+  max-width: none;
+  padding: 3rem 2rem 2rem;
+  width: 100%;
+}
+
+.artwork-lightbox::backdrop {
+  background: rgb(0 0 0 / 86%);
+}
+
+.artwork-lightbox__image {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-height: calc(100vh - 5rem);
+  max-width: min(92vw, 100rem);
+  object-fit: contain;
+  width: auto;
+}
+
+.artwork-lightbox__close {
+  background: transparent;
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  line-height: 1;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 2.5rem;
+}
+
+.artwork-lightbox__close:hover,
+.artwork-lightbox__close:focus-visible {
+  background: rgb(255 255 255 / 15%);
 }
 
 .artwork-figure figcaption {
@@ -257,6 +303,10 @@
   .artwork-card__visual:hover img,
   .artwork-figure:hover img {
     transform: none;
+  }
+
+  .artwork-lightbox__image {
+    transition: none;
   }
 }
 
