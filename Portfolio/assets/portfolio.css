@@ -100,14 +100,7 @@
   display: block;
   height: 100%;
   object-fit: contain;
-  transition: transform 300ms ease;
   width: 100%;
-}
-
-.artwork-card__visual:hover img {
-  position: relative;
-  transform: scale(2);
-  z-index: 2;
 }
 
 .artwork-card__placeholder {
@@ -226,6 +219,30 @@
   width: 100%;
 }
 
+.artwork-hover-lightbox {
+  align-items: center;
+  background: rgb(0 0 0 / 35%);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: fixed;
+  z-index: 1000;
+}
+
+.artwork-hover-lightbox[hidden] {
+  display: none;
+}
+
+.artwork-hover-lightbox img {
+  display: block;
+  height: auto;
+  max-height: 80vh;
+  max-width: 80vw;
+  object-fit: contain;
+  width: auto;
+}
+
 .artwork-figure figcaption {
   color: var(--artwork-muted);
   font-size: 0.82rem;
@@ -251,12 +268,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .artwork-card__visual img {
+  .artwork-hover-lightbox img {
     transition: none;
-  }
-
-  .artwork-card__visual:hover img {
-    transform: none;
   }
 }
 
