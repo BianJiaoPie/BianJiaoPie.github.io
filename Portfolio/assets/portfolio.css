@@ -221,17 +221,22 @@
 
 .artwork-hover-lightbox {
   align-items: center;
-  background: rgb(0 0 0 / 65%);
+  background: rgb(0 0 0 / 80%);
   display: flex;
   inset: 0;
   justify-content: center;
+  opacity: 0;
   pointer-events: none;
   position: fixed;
+  transition: opacity 500ms ease, visibility 0s linear 500ms;
+  visibility: hidden;
   z-index: 1000;
 }
 
-.artwork-hover-lightbox[hidden] {
-  display: none;
+.artwork-hover-lightbox.is-visible {
+  opacity: 1;
+  transition-delay: 0s;
+  visibility: visible;
 }
 
 .artwork-hover-lightbox img {
@@ -240,7 +245,13 @@
   max-height: 80vh;
   max-width: 80vw;
   object-fit: contain;
+  transform: scale(0.96);
+  transition: transform 500ms ease;
   width: auto;
+}
+
+.artwork-hover-lightbox.is-visible img {
+  transform: scale(1);
 }
 
 .artwork-figure figcaption {
@@ -269,6 +280,10 @@
 
 @media (prefers-reduced-motion: reduce) {
   .artwork-hover-lightbox img {
+    transition: none;
+  }
+
+  .artwork-hover-lightbox {
     transition: none;
   }
 }
