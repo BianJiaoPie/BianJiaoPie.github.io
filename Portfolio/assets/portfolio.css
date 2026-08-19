@@ -103,8 +103,7 @@
   width: 100%;
 }
 
-.artwork-card__visual:hover img,
-.artwork-figure:hover img {
+.artwork-card__visual:hover img {
   transform: scale(1.08);
 }
 
@@ -219,21 +218,19 @@
 }
 
 .artwork-figure img {
-  cursor: zoom-in;
   display: block;
   height: auto;
-  transition: transform 300ms ease;
   width: 100%;
 }
 
 .artwork-lightbox {
   background: rgb(0 0 0 / 86%);
   border: 0;
-  height: 100%;
-  max-height: none;
-  max-width: none;
+  height: min(80vh, 60rem);
+  max-height: 80vh;
+  max-width: 80vw;
   padding: 3rem 2rem 2rem;
-  width: 100%;
+  width: min(80vw, 60rem);
 }
 
 .artwork-lightbox::backdrop {
@@ -244,8 +241,8 @@
   display: block;
   height: auto;
   margin: auto;
-  max-height: calc(100vh - 5rem);
-  max-width: min(92vw, 100rem);
+  max-height: calc(80vh - 5rem);
+  max-width: calc(80vw - 4rem);
   object-fit: contain;
   width: auto;
 }
@@ -295,18 +292,25 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .artwork-card__visual img,
-  .artwork-figure img {
+  .artwork-card__visual img {
     transition: none;
   }
 
-  .artwork-card__visual:hover img,
-  .artwork-figure:hover img {
+  .artwork-card__visual:hover img {
     transform: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .artwork-lightbox {
+    height: 80vh;
+    max-width: 92vw;
+    width: 92vw;
   }
 
   .artwork-lightbox__image {
-    transition: none;
+    max-height: calc(80vh - 5rem);
+    max-width: calc(92vw - 4rem);
   }
 }
 
