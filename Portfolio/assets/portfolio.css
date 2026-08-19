@@ -98,7 +98,13 @@
   display: block;
   height: 100%;
   object-fit: contain;
+  transition: transform 300ms ease;
   width: 100%;
+}
+
+.artwork-card__visual:hover img,
+.artwork-figure:hover img {
+  transform: scale(1.08);
 }
 
 .artwork-card__placeholder {
@@ -207,12 +213,14 @@
 
 .artwork-figure {
   margin: 1.5rem auto;
+  overflow: hidden;
   width: 66.6667%;
 }
 
 .artwork-figure img {
   display: block;
   height: auto;
+  transition: transform 300ms ease;
   width: 100%;
 }
 
@@ -238,6 +246,18 @@
 
 .artwork-copyright p {
   margin: 0.75rem 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .artwork-card__visual img,
+  .artwork-figure img {
+    transition: none;
+  }
+
+  .artwork-card__visual:hover img,
+  .artwork-figure:hover img {
+    transform: none;
+  }
 }
 
 @media (max-width: 700px) {
