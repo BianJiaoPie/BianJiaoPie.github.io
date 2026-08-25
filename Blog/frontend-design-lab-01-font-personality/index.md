@@ -1,20 +1,30 @@
 ---
 layout: page/blog/blog
-title: "字型搭配筆記：同一個版型的四種設計風格"
+title: "前端設計實驗室 01｜換一套英文字型，畫面個性差多少？"
 date: 2026-08-14
-last_modified_at: 2026-08-14
+last_modified_at: 2026-08-25
 section: tech
 categories: [學習筆記, 前端設計]
 tags: [CSS, 字型, Vanilla JavaScript, Vue 3, React]
 description: 在同一張活動卡片上切換優雅、甜美、自然、帥氣四種字型，並即時比較 Vanilla、Vue 3、React 的實作程式碼。
+series: frontend-design-lab
+series_title: 前端設計實驗室
+series_order: 1
+article_type: lab
+source_pages: [110]
+tracks: [cute, portfolio, personality]
 author:
   name: Fung
   url: https://BianJiaoPie.com
 ---
 
+> [前端設計實驗室]({{ '/Blog/frontend-design-lab/' | relative_url }}) · 技巧篇 01
+
 同一段文案，換一套字型就像換了一種說話方式。襯線體比較優雅，圓體甜美，手寫體自然，粗黑窄體則顯得帥氣。與其逐一看靜態範例，不如直接在同一張卡片上比較。
 
 下面的版型、顏色和內容都不會改變。先切換「字型風格」觀察畫面，再切換 Vanilla、Vue 3、React，看看三種寫法如何控制同一個結果。右側程式碼會跟著選項同步更新。
+
+頁面本身由 Vanilla JavaScript 執行；Vue 3 與 React 頁籤顯示的是相同互動的核心寫法。
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,20 +33,20 @@ author:
 <section class="type-lab" id="type-lab" data-mood="sweet">
   <div class="type-lab__toolbar">
     <div class="type-lab__control">
-      <span>字型風格</span>
+      <span>英文字型風格</span>
       <div class="type-lab__buttons" role="group" aria-label="選擇字型風格">
-        <button type="button" data-mood="elegant">優雅</button>
+        <button type="button" data-mood="elegant" aria-pressed="false">優雅</button>
         <button type="button" data-mood="sweet" aria-pressed="true">甜美</button>
-        <button type="button" data-mood="natural">自然</button>
-        <button type="button" data-mood="cool">帥氣</button>
+        <button type="button" data-mood="natural" aria-pressed="false">自然</button>
+        <button type="button" data-mood="cool" aria-pressed="false">帥氣</button>
       </div>
     </div>
     <div class="type-lab__control">
       <span>實作方式</span>
       <div class="type-lab__buttons" role="group" aria-label="選擇實作方式">
         <button type="button" data-framework="vanilla" aria-pressed="true">Vanilla</button>
-        <button type="button" data-framework="vue">Vue 3</button>
-        <button type="button" data-framework="react">React</button>
+        <button type="button" data-framework="vue" aria-pressed="false">Vue 3</button>
+        <button type="button" data-framework="react" aria-pressed="false">React</button>
       </div>
     </div>
   </div>
@@ -332,6 +342,9 @@ author:
 lab.querySelectorAll("[data-mood]").forEach((button) => {
   button.addEventListener("click", () => {
     lab.dataset.mood = button.dataset.mood
+    lab.querySelectorAll("[data-mood]").forEach((item) => {
+      item.setAttribute("aria-pressed", String(item === button))
+    })
   })
 })`,
       vue: `<script setup>
@@ -346,6 +359,7 @@ const moods = ["elegant", "sweet", "natural", "cool"]
     <button
       v-for="item in moods"
       :key="item"
+      :aria-pressed="mood === item"
       @click="mood = item"
     >
       <span v-text="item" />
@@ -363,7 +377,11 @@ export default function TypeLab() {
   return (
     <section className="type-lab" data-mood={mood}>
       {moods.map((item) => (
-        <button key={item} onClick={() => setMood(item)}>
+        <button
+          key={item}
+          aria-pressed={mood === item}
+          onClick={() => setMood(item)}
+        >
           {item}
         </button>
       ))}
@@ -422,4 +440,24 @@ export default function TypeLab() {
 
 四種版本都只替換 CSS 變數，卡片本身不需要複製。Vanilla、Vue 3 和 React 的差別，也只是如何保存 `mood` 這個狀態；真正決定視覺性格的仍然是 CSS。
 
+## 三種程式碼有什麼差別？
+
+| 寫法 | 保存狀態 | 更新畫面 |
+| --- | --- | --- |
+| Vanilla | 一般變數 | 監聽按鈕並更新 `dataset` |
+| Vue 3 | `ref` | 透過資料綁定自動更新 |
+| React | `useState` | 更新 state 後重新渲染元件 |
+
+三種寫法都只保存目前的 `mood`，視覺樣式仍由同一組 CSS 變數控制。
+
+## 結語
+
 這次最值得記住的不是某一套字型名稱，而是：**先決定文字要用什麼語氣說話，再選擇字型、字重與字距。標題負責表現性格，長篇內文則繼續以清楚好讀為優先。**
+
+## 參考資料
+
+本文概念整理自 ingectar-e《最強排版設計：32個版面關鍵技巧，社群小編、斜槓設計，自學者神速升級！》P110，黃薇嬪譯，積木文化，2023。[城邦讀書花園書籍資料](https://www.cite.com.tw/book?id=97171)
+
+---
+
+系列導覽：[前端設計實驗室]({{ '/Blog/frontend-design-lab/' | relative_url }}) · 下一篇：[如何把不同顏色統一成柔和色調？]({{ '/Blog/frontend-design-lab-02-soft-tone/' | relative_url }})
