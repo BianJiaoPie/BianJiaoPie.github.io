@@ -11,8 +11,6 @@ title: About
 
 ## 關於邊角派 BianJiaoPie
 
-<img src="{{ '/favicon.ico' | relative_url }}" alt="邊角派 BianJiaoPie 網站圖示" width="180" height="180" style="display:block;width:180px;height:180px;margin:1.25rem auto 1.75rem;object-fit:contain;">
-
 Hi，這裡是邊角派，Fung 的個人網站——網路世界一角的數位工作室。
 
 美術研究所畢業，在台灣藝術大學主修水墨工筆與膠彩，後來接觸了程式碼與SEO。
@@ -33,3 +31,4 @@ Hi，這裡是邊角派，Fung 的個人網站——網路世界一角的數位�
 這名字起源於一個沒成的約定——原本要跟朋友一起組"浪漫派"，但隨著各自出社會後就不了了之。
 
 想想既然只剩我自己，不然就叫 "邊角派" 吧。
+
