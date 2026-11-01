@@ -62,6 +62,8 @@ exclude:
   - Portfolio/works/*/images/*.png
   - Portfolio/works/*/images/*.heic
   - Portfolio/works/*/images/*.heif
+  - Blog/**/*.heic
+  - Blog/**/*.HEIC
 
 # Build settings
 remote_theme: jekyll/minima
